@@ -1,3 +1,6 @@
+Sveltekit starter template with TypeScript, Prettier and ESLint using CLI, following Joy of Code's "Complete SvelteKit Course For Building Modern Web Apps" - released 04/04/2023 https://www.youtube.com/watch?v=MoGkX4RvZ38
+
+This branch represents the end of section "Using the Sveltekit CLI" @ (45:24)
 ## Developing
 
 Once cloned install dependencies with `npm install` (or `pnpm install` or `yarn`) 
