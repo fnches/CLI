@@ -1,0 +1,10 @@
+<script lang="ts">
+	//@ts-nocheck
+	import { page } from '$app/stores';
+</script>
+
+<h1>Rest parameters</h1>
+<pre>
+{JSON.stringify($page, null, 2)}
+
+</pre>
