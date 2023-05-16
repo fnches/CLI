@@ -5,8 +5,14 @@ import db from '$lib/database'
 
 
 
-export const GET: RequestHandler = async () => {
+export const GET: RequestHandler = async (event) => {
 
-    const posts = await db.post.findMany()
+    const posts = await db.post.findMany({
+        take: Math.round(Math.random() * 30)
+    })
+
+    event.setHeaders({
+        'Cache-Control': 'max-age=60' //'public, max-age=0, s-maxage=60' for CDN caching on SSR
+    })
     return json(posts)
 };
