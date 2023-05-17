@@ -1,23 +1,14 @@
 <script lang="ts">
-	import type { Post } from '@prisma/client';
+	import type { PageData } from './$types';
 
-	async function getPosts(params: type) {
-		const response = await fetch('api/posts');
-		const posts: Post[] = await response.json();
-		return posts;
-	}
+	export let data: PageData;
+
+	$: ({ posts } = data);
 </script>
 
 <h1>Posts</h1>
+<p>Showing {posts.length} posts.</p>
 
-{#await getPosts()}
-	<p>Loading...</p>
-{:then posts}
-	<p>Showing {posts.length} posts.</p>
-
-	{#each posts as { slug, title }}
-		<ul><li><a href="/posts/{slug}">{title}</a></li></ul>
-	{/each}
-{:catch error}
-	<p>{error.message}</p>
-{/await}
+{#each posts as { slug, title }}
+	<ul><li><a href="/posts/{slug}">{title}</a></li></ul>
+{/each}
