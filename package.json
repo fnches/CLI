@@ -19,11 +19,11 @@
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",
+		"@prisma/client": "^4.14.0",
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.5.0",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
 		"@typescript-eslint/parser": "^5.45.0",
-		"@prisma/client": "^4.14.0",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte": "^2.26.0",
@@ -37,6 +37,7 @@
 		"vitest": "^0.25.3"
 	},
 	"dependencies": {
+		"@perawallet/connect": "^1.2.3",
 		"@prisma/client": "^4.14.0",
 		"algosdk": "^2.3.0"
 	}
