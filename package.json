@@ -37,6 +37,7 @@
 		"vitest": "^0.25.3"
 	},
 	"dependencies": {
-		"@prisma/client": "^4.14.0"
+		"@prisma/client": "^4.14.0",
+		"algosdk": "^2.3.0"
 	}
 }
