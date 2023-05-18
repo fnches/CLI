@@ -1,7 +1,18 @@
 <script lang="ts">
-	import { PageData } from './../../../../.svelte-kit/types/src/routes/Posts/[slug=slug]/$types.d.ts';
+	import type { PageData } from './$types';
 
-import type {PageData}
-export let data: PageData
+	export let data: PageData;
 
+	function formatDate(date: Date) {
+		return new Intl.DateTimeFormat('en', { dateStyle: 'long' }).format(date);
+	}
 </script>
+
+<hgroup>
+	<h1>{data.post.title}</h1>
+	<h2>{formatDate(data.post.createdAt)}</h2>
+</hgroup>
+
+<div class="content">
+	{@html data.post.content}
+</div>
