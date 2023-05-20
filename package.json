@@ -32,7 +32,7 @@
 		"vitest": "^0.31.1"
 	},
 	"dependencies": {
-		"@perawallet/connect": "^1.1.0",
+		"@perawallet/connect": "^1.2.3",
 		"algosdk": "1.23.2",
 		"svelte": "^3.32.3"
 	},
