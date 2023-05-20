@@ -31,5 +31,10 @@
 		"vite": "^4.3.8",
 		"vitest": "^0.31.1"
 	},
+	"dependencies": {
+		"@perawallet/connect": "^1.1.0",
+		"algosdk": "1.23.2",
+		"svelte": "^3.32.3"
+	},
 	"type": "module"
 }
