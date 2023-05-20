@@ -33,8 +33,8 @@
 	},
 	"dependencies": {
 		"@perawallet/connect": "^1.2.3",
-		"algosdk": "1.23.2",
-		"svelte": "^3.32.3"
+		"algosdk": "2.3.0",
+		"svelte": "^3.59.1"
 	},
 	"type": "module"
 }
