@@ -39,6 +39,7 @@
 	"dependencies": {
 		"@perawallet/connect": "^1.2.3",
 		"@prisma/client": "^4.14.0",
-		"algosdk": "^2.3.0"
+		"algosdk": "^2.3.0",
+		"buffer": "^6.0.3"
 	}
 }

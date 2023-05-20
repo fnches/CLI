@@ -2,7 +2,7 @@
 	//@ts-nocheck
 
 	import { onMount, onDestroy } from 'svelte';
-	import { algod } from './Algorand';
+	import { algod } from './algorand';
 
 	let running;
 	let last_round;

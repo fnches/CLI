@@ -1,13 +1,18 @@
 <script lang="ts">
-	import Defly from '$lib/Defly.svelte';
 </script>
 
 <main>
 	<div>
 		<h1>Wallet?</h1>
-		<div>
-			<Defly />
-		</div>
+	</div>
+	<div>
+		<nav>
+			<ul>
+				<li><a href="/">Home</a></li>
+
+				<li><a href="/defly/inner/winner">Connect</a></li>
+			</ul>
+		</nav>
 	</div>
 </main>
 
