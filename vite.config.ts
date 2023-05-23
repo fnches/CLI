@@ -8,12 +8,10 @@ import nodePolyfills from 'rollup-plugin-polyfill-node';
 export default defineConfig({
 	base: './',
 	// Node.js global to browser globalThis
-	define: { global: 'globalThis' },
+
 	plugins: [sveltekit(), inject({ util: 'util/' })],
 	build: {
-		rollupOptions: {
-			plugins: [nodePolyfills()]
-		},
+		rollupOptions: { plugins: [nodePolyfills()] },
 		commonjsOptions: { transformMixedEsModules: true }
 	},
 	optimizeDeps: {
