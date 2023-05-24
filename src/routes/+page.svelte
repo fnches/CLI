@@ -2,9 +2,10 @@
 	//@ts-nocheck
 
 	import { browser } from '$app/environment';
-	import { pera }
 </script>
 
 <div>
-	<h1>Come inside</h1>
+	<h1>
+		Come <li><a href="/inside">Inside</a></li>
+	</h1>
 </div>
