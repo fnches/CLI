@@ -5,32 +5,26 @@ import notifier from 'vite-plugin-notifier';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-mode === "development"
-? [
-          sveltekit(),
-          notifier(),
-          nodePolyfills({
-            // Whether to polyfill `node:` protocol imports.
-            protocolImports: true,
-          }),
-        ]
-      : [],
-  server: {
-    port: 4020,
-  },
-  resolve: {
-    alias:
-  },
-  optimizeDeps: {
-    esbuildOptions: {
-      // Node.js global to browser globalThis
-      define: {
-        global: "globalThis",
-      },
-    },
-  },
-	build: {
-    },
-  },
-  esbuild: { },
+	plugins:
+		mode === 'development'
+			? [
+					sveltekit(),
+					notifier(),
+					nodePolyfills({
+						// Whether to polyfill `node:` protocol imports.
+						protocolImports: true
+					})
+			  ]
+			: [],
+	server: {
+		port: 4020
+	},
+	optimizeDeps: {
+		esbuildOptions: {
+			// Node.js global to browser globalThis
+			define: {
+				global: 'globalThis'
+			}
+		}
+	}
 }));
