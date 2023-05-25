@@ -18,7 +18,7 @@
 		}
 	});
 
-	function reconnectSession() {
+	export function reconnectSession() {
 		// Reconnect to the session when the component is mounted
 		peraWallet
 			.reconnectSession()
@@ -34,7 +34,7 @@
 			.catch((e) => console.log(e));
 	}
 
-	function handleConnectWalletClick(event) {
+	export function handleConnectWalletClick(event) {
 		event.preventDefault();
 
 		peraWallet
@@ -53,7 +53,7 @@
 			});
 	}
 
-	function handleDisconnectWalletClick(event) {
+	export function handleDisconnectWalletClick(event) {
 		event.preventDefault();
 
 		peraWallet.disconnect().catch((error) => {

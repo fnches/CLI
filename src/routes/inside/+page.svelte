@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 
 	onMount(async () => {
-		const Pera = await import('/src/lib/pera.js');
-		Pera.handleConnectWalletClick(event);
+		const Pera = await import('$lib/pera.js');
+		Pera.handleConnectWalletClick();
 	});
 </script>
