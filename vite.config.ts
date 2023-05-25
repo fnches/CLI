@@ -1,18 +1,23 @@
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vitest/config';
 import { nodePolyfills } from 'vite-plugin-node-polyfills';
+import basicSsl from '@vitejs/plugin-basic-ssl';
 
 // https://vitejs.dev/config/
 export default defineConfig(() => ({
 	plugins: [
 		sveltekit(),
+		basicSsl(),
 		nodePolyfills({
 			// Whether to polyfill `node:` protocol imports.
 			protocolImports: true
 		})
 	],
 	server: {
-		port: 4020
+		hmr: {
+			host: 'localhost',
+			protocol: 'ws'
+		}
 	},
 	optimizeDeps: {
 		esbuildOptions: {
