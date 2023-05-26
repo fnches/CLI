@@ -1,8 +1,9 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-
-	onMount(async () => {
-		//const Pera = await import('$lib/pera.js');
-		//Pera.handleConnectWalletClick();
-	});
+	import Pera from '$lib/Pera.svelte';
 </script>
+
+<main>
+	<div>
+		<Pera />
+	</div>
+</main>
