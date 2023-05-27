@@ -12,6 +12,7 @@ export default defineConfig(() => ({
 		})
 	],
 	optimizeDeps: {
+		include: ['algosdk', '@perawallet/connect'],
 		esbuildOptions: {
 			// Node.js global to browser globalThis https://github.com/perawallet/connect/issues/101#issuecomment-1468996145
 			define: {
