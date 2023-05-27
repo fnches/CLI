@@ -12,6 +12,7 @@
 			.reconnectSession()
 			.then((accounts) => {
 				// Setup the disconnect event listener
+				//TODO: change to void type??
 				peraWallet.connector.on('disconnect', handleDisconnectWalletClick);
 
 				if (accounts.length) {
