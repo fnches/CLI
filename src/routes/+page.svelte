@@ -1,7 +1,9 @@
 <script lang="ts">
-	//@ts-nocheck
+	import type { PageData } from './$types';
 
-	import { browser } from '$app/environment';
+	export let data: PageData;
+
+	$: ({ posts } = data);
 </script>
 
 <div>
@@ -10,5 +12,11 @@
 		<a href="/inside">Come See</a>
 	</h2>
 </div>
+<div>
+<h1>Posts</h1>
+<p>Showing {posts.length} posts.</p>
 
-<style></style>
+{#each posts as { slug, title }}
+	<ul><li><a href="/posts/{slug}">{title}</a></li></ul>
+{/each}
+</div>

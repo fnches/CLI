@@ -1,12 +1,18 @@
 lockfileVersion: '6.0'
 
 dependencies:
+<<<<<<< HEAD
   '@perawallet/connect':
     specifier: ^1.2.3
     version: 1.2.3(algosdk@2.3.0)
   algosdk:
     specifier: 2.3.0
     version: 2.3.0
+=======
+  '@prisma/client':
+    specifier: ^4.14.0
+    version: 4.14.0
+>>>>>>> Origin/main
 
 devDependencies:
   '@playwright/test':
@@ -398,6 +404,7 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
+<<<<<<< HEAD
   /@rollup/plugin-inject@5.0.3(rollup@3.23.0):
     resolution: {integrity: sha512-411QlbL+z2yXpRWFXSmw/teQRMkXcAAC8aYTemc15gwJRpvEVDQwoe+N/HTFD8RFG8+88Bme9DK2V9CVm7hJdA==}
     engines: {node: '>=14.0.0'}
@@ -430,6 +437,27 @@ packages:
 
   /@sveltejs/adapter-auto@2.1.0(@sveltejs/kit@1.19.0):
     resolution: {integrity: sha512-o2pZCfATFtA/Gw/BB0Xm7k4EYaekXxaPGER3xGSY3FvzFJGTlJlZjBseaXwYSM94lZ0HniOjTokN3cWaLX6fow==}
+=======
+  /@prisma/client@4.14.0:
+    resolution: {integrity: sha512-MK/XaA2sFdfaOa7I9MjNKz6dxeIEdeZlnpNRoF2w3JuRLlFJLkpp6cD3yaqw2nUUhbrn3Iqe3ZpVV+VuGGil7Q==}
+    engines: {node: '>=14.17'}
+    requiresBuild: true
+    peerDependencies:
+      prisma: '*'
+    peerDependenciesMeta:
+      prisma:
+        optional: true
+    dependencies:
+      '@prisma/engines-version': 4.14.0-67.d9a4c5988f480fa576d43970d5a23641aa77bc9c
+    dev: false
+
+  /@prisma/engines-version@4.14.0-67.d9a4c5988f480fa576d43970d5a23641aa77bc9c:
+    resolution: {integrity: sha512-3jum8/YSudeSN0zGW5qkpz+wAN2V/NYCQ+BPjvHYDfWatLWlQkqy99toX0GysDeaUoBIJg1vaz2yKqiA3CFcQw==}
+    dev: false
+
+  /@sveltejs/adapter-auto@2.0.1(@sveltejs/kit@1.15.9):
+    resolution: {integrity: sha512-anxxYMcQy7HWSKxN4YNaVcgNzCHtNFwygq72EA1Xv7c+5gSECOJ1ez1PYoLciPiFa7A3XBvMDQXUFJ2eqLDtAA==}
+>>>>>>> Origin/main
     peerDependencies:
       '@sveltejs/kit': ^1.0.0
     dependencies:

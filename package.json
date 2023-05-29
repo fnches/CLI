@@ -2,6 +2,10 @@
 	"name": "cli",
 	"version": "0.0.1",
 	"private": true,
+	"type": "module",
+	"prisma": {
+		"seed": "pnpx vite-node prisma/seed.ts"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build",
@@ -25,7 +29,7 @@
 		"eslint-plugin-svelte": "^2.28.0",
 		"prettier": "^2.8.8",
 		"prettier-plugin-svelte": "^2.10.0",
-		"rollup-plugin-polyfill-node": "0.12.0",
+		"prisma": "^4.10.1",
 		"svelte": "^3.59.1",
 		"svelte-check": "^3.3.2",
 		"tslib": "^2.5.2",
@@ -36,6 +40,6 @@
 	"dependencies": {
 		"@perawallet/connect": "^1.2.3",
 		"algosdk": "2.3.0"
-	},
-	"type": "module"
+	}
+
 }
