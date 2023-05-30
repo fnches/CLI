@@ -9,8 +9,10 @@ This branch represents the end of section "Sometimes You Only Want To Run Code O
 Once cloned install dependencies with `npm install` (or `pnpm install` or `yarn`) 
 
 Rename ".env.example" file in root to ".env"
-Run command: 
+
+Run command:
 `npx prisma migrate dev`
+
 Start a development server:
 `npm run dev`
 
@@ -23,6 +25,12 @@ To create a production version of your app:
 
 ```bash
 npm run build
+```
+
+and
+
+```bash
+npm run preview
 ```
 
 You can preview the production build with `npm run preview`.
