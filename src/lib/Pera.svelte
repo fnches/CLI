@@ -1,10 +1,14 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { PeraWalletConnect } from '@perawallet/connect';
+	import { createEventDispatcher } from 'svelte';
 
 	const peraWallet: PeraWalletConnect = new PeraWalletConnect();
 
+	const dispatch = createEventDispatcher();
+
 	let accountAddress = '';
+	export let accountAddressLoose = '';
 
 	onMount(() => {
 		// Reconnect to the session when the component is mounted
@@ -50,16 +54,16 @@
 
 	function setAccountAddress(address) {
 		accountAddress = address;
+		accountAddressLoose = address;
+		dispatch('accountAddressSet', accountAddress);
 	}
 </script>
 
 <main>
-	<h1>Pera Connect with SvelteKit!</h1>
-
 	<button on:click={!!accountAddress ? handleDisconnectWalletClick : handleConnectWalletClick}>
-		{!!accountAddress ? 'Disconnect from ' : 'Connect to Pera Wallet'}
+		{!!accountAddress ? 'Disconnect' : 'Connect to Pera Wallet'}
 	</button>
-	<h2>{accountAddress}</h2>
+	<p>{accountAddress}</p>
 </main>
 
 <style>
