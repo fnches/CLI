@@ -66,6 +66,8 @@
 	<p>{accountAddress}</p>
 </main>
 
+<slot />
+
 <style>
 	main {
 		display: flex;

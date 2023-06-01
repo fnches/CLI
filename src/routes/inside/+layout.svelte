@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Library from '$lib/Library.svelte';
 	import Pera from '$lib/Pera.svelte';
 	import Status from '$lib/Status.svelte';
 
@@ -12,7 +13,7 @@
 
 <aside>
 	<div class="pera">
-		<Pera bind:accountAddressLoose on:accountAddressSet={handleAccountAddressSet} />
+		<Pera bind:accountAddressLoose on:accountAddressSet={handleAccountAddressSet}><Library /></Pera>
 	</div>
 </aside>
 

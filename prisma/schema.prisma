@@ -22,7 +22,7 @@ model Post {
 }
 
 model CorvusASA {
-  asa      Int     @id
+  asa      Int     @id @unique
   title    String
   imageref String
   owner    String
